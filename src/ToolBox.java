@@ -2,24 +2,22 @@ import java.util.Scanner;
 
 public class ToolBox {
 
-    // Write your full name here
-    // Name: Franije S. Khu
 
     static String greet(String name) {
         return "Hello, " + name + "! Welcome to my Java Toolbox.";
     }
 
-    // Method overloading - square
+
     static double area(double side) {
         return side * side;
     }
 
-    // Method overloading - rectangle
+
     static double area(double length, double width) {
         return length * width;
     }
 
-    // Varargs
+
     static int sum(int... numbers) {
         int total = 0;
 
@@ -30,7 +28,7 @@ public class ToolBox {
         return total;
     }
 
-    // Pass-by-value demonstration
+
     static void swap(int a, int b) {
         int temp = a;
         a = b;
@@ -39,12 +37,12 @@ public class ToolBox {
         System.out.println(" (inside swap) a = " + a + ", b = " + b);
     }
 
-    // Object mutation demonstration
+
     static void addToBox(Box box, int amount) {
         box.value = box.value + amount;
     }
 
-    // Box class
+
     static class Box {
         int value;
 
